@@ -452,6 +452,11 @@
   .final .beneficio{margin-bottom:12px}
 
   /* Frase con foto */
+  .testimonio{background:#E3E9F5;box-shadow:0 0 0 100vmax #E3E9F5;clip-path:inset(0 -100vmax);padding:56px 0 52px;margin:0;text-align:center}
+  .testimonio::before{content:"“";display:block;font-family:Georgia,serif;font-size:72px;line-height:.6;color:var(--peonia);margin-bottom:14px}
+  .testimonio blockquote p{font-family:'Josefin Sans',sans-serif;font-weight:300;font-size:clamp(19px,2.6vw,23px);line-height:1.55;color:var(--profundo);max-width:40ch;margin:0 auto;text-wrap:pretty}
+  .testimonio figcaption{margin-top:20px;font-size:14px;color:var(--suave)}
+  @media (max-width:600px){.testimonio{padding:44px 0 40px}.testimonio blockquote p{font-size:18px}}
   .frase{
     display:grid;grid-template-columns:220px 1fr;gap:32px;align-items:center;
     padding:48px 0;margin:0 0 64px;
@@ -714,6 +719,11 @@
     </div>
     <p class="nota-modo">Es un acompañamiento de coaching y terapias complementarias: no sustituye la evaluación ni el tratamiento psicológico o médico, y es compatible con ellos.</p>
   </section>
+
+  <figure class="testimonio">
+        <blockquote><p>Desde el principio me he sentido muy cómoda y escuchada. Karina es cercana, cálida y transmite mucha confianza. Me está ayudando a poner orden en mi cabeza, a entender mejor lo que me pasa y a gestionar el estrés y todo aquello que a veces se nos acumula por dentro. Ya voy viendo las cosas desde otra perspectiva. La recomiendo a cualquier persona que sienta que necesita parar, escucharse y poner un poco de luz y orden en lo que está viviendo.</p></blockquote>
+    <figcaption>— Clienta de Atípicas · extracto de su reseña en Google</figcaption>
+  </figure>
 
   <div class="cta cta-destacado">
     <h2 class="cta-tit">Cuéntame tu caso</h2>
