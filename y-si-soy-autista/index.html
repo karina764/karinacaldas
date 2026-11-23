@@ -113,9 +113,15 @@ footer:not(.oculto){display:flex;align-items:flex-end;gap:14px;justify-content:c
 footer .logo{width:44px;margin:0;color:var(--indigo)}
 .legal-lnk{text-align:center;font-size:14px;color:#55556A;margin:0;padding:18px 20px 34px}.legal-lnk a{color:#55556A}
 #impresion{display:none}
+.solo-print{display:none}
+.print-cta{text-align:left;border:1.5px solid var(--celeste);border-radius:14px;padding:14px 18px;margin:0 0 10px}
+.print-cta b{display:block;font-family:'Josefin Sans',sans-serif;font-weight:400;letter-spacing:.08em;text-transform:uppercase;color:var(--indigo);font-size:15px;margin-bottom:6px}
+.print-cta p{margin:0 0 3px;font-size:13px;line-height:1.5}
+.print-cta a{color:var(--tinta);text-decoration:none}
 @media(max-width:560px){.vias{grid-template-columns:1fr}.esno{grid-template-columns:1fr}.barra a{font-size:14px;padding:7px 12px}.largo{display:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.prog-bar i,.op span{transition:none}}
-@media print{.legal-lnk,.barra,.portada,#intro,#preguntas,.contacto,.final .btn,.acciones,footer{display:none!important}#impresion{display:block}body{font-size:12px}#resultado{padding:0}}
+@page{margin:16mm 14mm 18mm;@bottom-center{content:'Karina Caldas Senin · Coach en neurodiversidad · karinacaldas.com';font-family:Lexend,sans-serif;font-size:9pt;color:#55556A}}
+@media print{.solo-print{display:block}.print-cta{break-inside:avoid}.final{padding-top:16px}.frase{margin-top:22px}.legal-lnk,.barra,.portada,#intro,#preguntas,.contacto,.final .btn,.acciones,footer{display:none!important}#impresion{display:block}body{font-size:12px}#resultado{padding:0}}
 </style>
 </head>
 <body>
@@ -182,6 +188,12 @@ footer .logo{width:44px;margin:0;color:var(--indigo)}
     <p>En <strong style="font-weight:500">Atípicas</strong> acompaño también a mujeres en proceso de diagnóstico o con sospecha: sesiones individuales en Palma, Felanitx u online, sin permanencia.</p>
   </div>
   <a class="btn btn-p" href="/atipicas">Conoce el programa de acompañamiento Atípicas →</a>
+  <div class="print-cta solo-print">
+    <b>Cuéntame tu caso</b>
+    <p>WhatsApp: <a href="https://wa.me/34652111561">+34 652 111 561</a> · Correo: <a href="mailto:karina@karinacaldas.com">karina@karinacaldas.com</a></p>
+    <p>Llamada gratuita: <a href="https://calendly.com/karinacaldas/llamado-gratuito">calendly.com/karinacaldas/llamado-gratuito</a></p>
+    <p>Programa Atípicas: <a href="https://www.karinacaldas.com/atipicas">karinacaldas.com/atipicas</a></p>
+  </div>
   <p class="frase">“Cuando las máscaras caen, el alma respira.”</p>
   <p class="firma">— Karina</p>
 </div></section>
